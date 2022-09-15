@@ -18,7 +18,6 @@ const SearchBar = () => {
     }
   };
 
-  console.log('a');
   return (
     <Paper
       component="form"
