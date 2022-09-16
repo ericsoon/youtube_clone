@@ -24,7 +24,7 @@ const VideoDetail = () => {
   //     .then((data) => setVideoComments(data.items));
   }, [id]);
 
-  console.log(setVideoDetail);
+  // console.log(setVideoDetail);
 
   if (!videoDetail?.snippet) return 'Loading...';
 
