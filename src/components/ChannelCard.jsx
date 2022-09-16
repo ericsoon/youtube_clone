@@ -28,7 +28,7 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
             flexDirection: 'column',
             justifyContent: 'center',
             textAlign: 'center',
-            color: '#fff' }}
+          }}
         >
           <CardMedia
             image={channelDetail?.snippet?.thumbnails?.high?.url || demoProfilePicture}
@@ -40,12 +40,12 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
               border: '1px solid #e3e3e3',
             }}
           />
-          <Typography variant="h6">
+          <Typography variant="h6" color="textPrimary">
             {channelDetail?.snippet?.title}
             <CheckCircle sx={{ fontSize: '15px', color: 'gray', ml: '5px' }} />
           </Typography>
           {channelDetail?.statistics?.subscriberCount && (
-            <Typography variant="h5">
+            <Typography variant="h5" color="textPrimary">
               {/* eslint-disable-next-line */}
               {parseInt(channelDetail?.statistics?.subscriberCount).toLocaleString('en-US')} Subs
             </Typography>

@@ -41,7 +41,7 @@ const VideoDetail = () => {
               className="react-player"
               controls
             />
-            <Typography variant="h5" color="#fff" fontWeight="bold" p={2}>
+            <Typography variant="h5" fontWeight="bold" p={2}>
               {title}
             </Typography>
             <Stack
@@ -52,17 +52,17 @@ const VideoDetail = () => {
               px={2}
             >
               <Link to={`/channel/${channelId}`}>
-                <Typography variant={{ sm: 'subtitle1', md: 'h6' }} color="#fff">
+                <Typography variant={{ sm: 'subtitle1', md: 'h6' }} color="textPrimary">
                   {channelTitle}
                   <CheckCircle sx={{ fontSize: '12px', color: 'gray', ml: '5px' }} />
                 </Typography>
               </Link>
               <Stack direction="row" gap="20px" alignItems="center">
-                <Typography variant="body1" sx={{ opacity: 0.7 }}>
+                <Typography variant="body1" sx={{ opacity: 0.7 }} color="textPrimary">
                   {/* eslint-disable-next-line */}
                   {parseInt(viewCount).toLocaleString()} views
                 </Typography>
-                <Typography variant="body1" sx={{ opacity: 0.7 }}>
+                <Typography variant="body1" sx={{ opacity: 0.7 }} color="textPrimary">
                   {/* eslint-disable-next-line */}
                   {parseInt(likeCount).toLocaleString()} likes
                 </Typography>
