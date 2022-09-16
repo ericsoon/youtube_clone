@@ -1,3 +1,4 @@
+/* eslint-disable */
 export { default as Navbar } from './Navbar';
 export { default as ChannelDetail } from './ChannelDetail';
 export { default as SearchFeed } from './SearchFeed';
